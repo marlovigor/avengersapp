@@ -325,29 +325,6 @@ class hulkscreen extends React.Component {
 
 
 
-
-const RootStack = createStackNavigator(
-  {
-    Home: HomeScreen,
-    Details: spidermanscreen,
-    Details2: pantherscreen,
-    Details3: hulkscreen,
-
-
-  },
-  {
-    initialRouteName: 'Home',
-  }
-);
-
-export default class App extends React.Component {
-  render() {
-    return <RootStack />;
-  }
-}
-
-
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -366,38 +343,32 @@ const styles = StyleSheet.create({
 		justifyContent: 'center',
     backgroundColor: "rgba(0, 0, 0, 0.5)",
   },
-  Spiderman: {
-    flex:1,
-    alignItems: 'flex-start',
-    justifyContent: 'flex-start',
-    width: 50,
-    height: 100,
-    bottom: -150,
-    left: Dimensions.get('window').width -70,
-    zIndex: 20,
-    left:100,
-    
-    
-    
-  },
+  spiderman: {
+    ///borderWidth: 1,
+    ///borderColor: "red",
+    width: 200,
+    height: 200,
+    bottom: -20,
+    left: Dimensions.get('window').width - 160,
+    zIndex: 50,
+    },
   panther: {
-    flex: 1,
-    alignItems: 'flex-start',
-    justifyContent: 'flex-start',
-    width: 18,
+    //borderWidth: 1,
+    ///borderColor: "red",
+    width: 180,
     height: 250,
-    bottom: 160,
-    left: Dimensions.get('window').width -200,
-    zIndex: 10,
+    bottom: -50,
+    left: Dimensions.get('window').width - 350,
+    zIndex: 50,
   },
   hulk:{
-    flex:1,
-    alignItems: 'flex-start',
-    justifyContent: 'flex-start',
-    width: 50,
-    height: 100,
-    bottom: -100,
-    left: Dimensions.get('window').width -70,
-    zIndex: 20,
-    left:100}
+    ///borderWidth: 1,
+    ///borderColor: "red",
+    width: 150,
+    height: 150,
+    bottom: 100,
+     left: Dimensions.get('window').width - 225,
+    zIndex: 50,
+  }
+
 });
